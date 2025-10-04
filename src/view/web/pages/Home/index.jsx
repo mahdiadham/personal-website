@@ -1,14 +1,20 @@
-import { lazy, Suspense } from "react";
-import Loading from "../../../../components/Loading/Loading";
-
-const Intro = lazy(() => import("./components/Intro/Intro"));
+import LazyLoad from "react-lazyload";
+import Intro from "./components/Intro/Intro";
+import About from "./components/About/About";
 
 const Home = () => {
     return (
         <>
-            <Suspense fallback={<Loading />}>
-                <Intro />
-            </Suspense>
+            <LazyLoad once={true} height={300}>
+                <section>
+                    <Intro />
+                </section>
+            </LazyLoad>
+            <LazyLoad once={true} height={300}>
+                <section>
+                    <About />
+                </section>
+            </LazyLoad>
         </>
     );
 }

@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Navigate } from "react-router";
-import { IoStatsChart, IoHome } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
 import Loading from "../../components/Loading/Loading";
 
 const Home = lazy(() => import("../../view/web/pages/Home"));

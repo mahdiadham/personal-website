@@ -1,20 +1,79 @@
-import IntroImage from "../../../../../../assets/images/elements/intro-image.webp";
+import { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
+import { introText } from "../../../../../../data/data.json";
+import IntroGif from "../../../../../../assets/images/elements/intro-gif.gif";
+import ResumePDF from "../../../../../../assets/docs/mahdi-adham-resume.pdf";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { IoMdArrowDown } from "react-icons/io";
+import { motion } from "motion/react";
 
 const Intro = () => {
+    const [ loading, setLoading ] = useState(false);
+
+    const handleDownload = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+    }
+
     return (
         <div className="container flex justify-between items-center">
-            <div>
-                <div>
-                    <div className="size-10 overflow-hidden shadow-neon-sm flex justify-center items-center">
-                        <img src={IntroImage} alt="intro-image" className="size-10" />
+            <motion.div
+                className="flex flex-col justify-start items-start gap-y-6"
+                initial={{x: -300, opacity: 0}}
+                whileInView={{x: 0, opacity: 1}}
+                transition={{duration: 0.6}}
+                viewport={{ once: true, amount: 0.3 }}
+            >
+                <div className="flex justify-start items-center gap-3">
+                    <div className="size-11 overflow-hidden shadow-neon-sm flex justify-center items-center rounded-md">
+                        <img src={IntroGif} alt="intro-image" />
                     </div>
+                    <div className="size-3 bg-emerald-700 rounded-full flex justify-center items-center">
+                        <div className="bg-emerald-700 rounded-full size-3 animate-ping"></div>
+                    </div>
+                    <span className="capitalize text-gray-600 text-sm">open to work</span>
                 </div>
-                <div></div>
-                <div></div>
-            </div>
-            <div className="rounded-custom shadow-custom-neon overflow-hidden w-1/2">
-                <img src={IntroImage} alt="intro-image" />
-            </div>
+                <div>
+                    <TypeAnimation className="font-ubuntuMedium text-white text-6xl capitalize custom-title-leading w-130 h-50 leading-17"
+                        sequence={[
+                            600,
+                            introText?.firstText,
+                            1000,
+                            introText?.secondText,
+                            1000,
+                            introText?.thirdText,
+                            1000
+                        ]}
+                        wrapper="h2"
+                        speed={30}
+                        repeat={Infinity}
+                    />
+                </div>
+                <div className="flex justify-start items-center gap-4 mt-5">
+                    <a href={ResumePDF} download className="bg-emerald-700 flex justify-center items-center gap-3 rounded-lg px-5 h-12 capitalize" onClick={handleDownload}>
+                        download cV
+                        {loading ?
+                            <div className="animate-spin size-5 border-2 border-black border-b-transparent rounded-full"></div>
+                            : <MdOutlineFileDownload size={25} />
+                        }
+                    </a>
+                    <a href="#about" className="bg-slate-800 text-white flex justify-center items-center gap-3 rounded-lg px-5 h-12 capitalize">
+                        scroll down
+                        <IoMdArrowDown size={22} />
+                    </a>
+                </div>
+            </motion.div>
+            <motion.div
+                className="rounded-custom shadow-custom-neon overflow-hidden w-1/3"
+                initial={{y: 300, opacity: 0}}
+                whileInView={{y: 0, opacity: 1}}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{duration: 0.6}}
+            >
+                <img src={IntroGif} alt="intro-image" />
+            </motion.div>
         </div>
     );
 }
