@@ -1,4 +1,5 @@
 {
+    "status": true,
     "menu": [
         {
             "title": "home",
@@ -23,5 +24,91 @@
         "description": "I am a MERN Stack Developer specializing in designing and developing modern, scalable, and high-performance web applications. With expertise in React js Node.js, Express, and MongoDB and a deep understanding of client-side and server-side architecture, I deliver efficient and reliable technical solutions. My experience working in cohesive and dynamic teams has enabled me to drive projects with a strong focus on quality, performance, and user experience. I am committed to following Clean Code principles, building modular and maintainable structures, and implementing industry best practices in all software development endeavors. Continuous learning and leveraging the latest technologies, particularly within the JavaScript ecosystem, are integral parts of my professional approach. My goal is to create solutions that, in addition to technical excellence, deliver real value to both users and organizations.",
         "projects": 110,
         "yearsOfExperience": 5
+    },
+    "technologies": {
+        "title": "essential tools i use",
+        "description": "discover the powerful tools and technologies I use to create exceptional, high-performing websites.",
+        "list": [
+            {
+                "name": "HTML",
+                "role": "content structure",
+                "icon": "/src/assets/icons/HTML.webp"
+            },
+            {
+                "name": "CSS",
+                "role": "user interface",
+                "icon": "/src/assets/icons/CSS.webp"
+            },
+            {
+                "name": "JavaScript",
+                "role": "client-side scripting",
+                "icon": "/src/assets/icons/JavaScript.webp"
+            },
+            {
+                "name": "Material UI",
+                "role": "design system",
+                "icon": "/src/assets/icons/MaterialUI-Dark.webp"
+            },
+            {
+                "name": "React",
+                "role": "interactive UIs",
+                "icon": "/src/assets/icons/React-Dark.webp"
+            },
+            {
+                "name": "Redux",
+                "role": "state management",
+                "icon": "/src/assets/icons/Redux.webp"
+            },
+            {
+                "name": "NextJS",
+                "role": "server rendering",
+                "icon": "/src/assets/icons/NextJS-Dark.webp"
+            },
+            {
+                "name": "Docker",
+                "role": "containerization",
+                "icon": "/src/assets/icons/Docker.webp"
+            },
+            {
+                "name": "MongoDB",
+                "role": "NoSQL database",
+                "icon": "/src/assets/icons/MongoDB.webp"
+            },
+            {
+                "name": "MySQL",
+                "role": "relational database",
+                "icon": "/src/assets/icons/MySQL-Dark.webp"
+            },
+            {
+                "name": "NodeJS",
+                "role": "server-side runtime",
+                "icon": "/src/assets/icons/NodeJS-Dark.webp"
+            },
+            {
+                "name": "ExpressJS",
+                "role": "backend framework",
+                "icon": "/src/assets/icons/ExpressJS-Dark.webp"
+            },
+            {
+                "name": "TailwindCSS",
+                "role": "utility-first styling",
+                "icon": "/src/assets/icons/TailwindCSS-Dark.webp"
+            },
+            {
+                "name": "Bootstrap",
+                "role": "UI framework",
+                "icon": "/src/assets/icons/Bootstrap.webp"
+            },
+            {
+                "name": "Git",
+                "role": "version control",
+                "icon": "/src/assets/icons/Git.webp"
+            },
+            {
+                "name": "GitHub",
+                "role": "code hosting platform",
+                "icon": "/src/assets/icons/Github-Dark.webp"
+            }
+        ]
     }
 }

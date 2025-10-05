@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .skills {
+        @apply flex flex-col justify-center items-center gap-2;
+    }
+    .skills span:first-child {
+        @apply text-white text-5xl;
+    }
+    .skills span:last-child {
+        @apply text-emerald-900 capitalize text-lg;
+    }
+}

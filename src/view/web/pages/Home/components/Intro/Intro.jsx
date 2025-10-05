@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { introText } from "../../../../../../data/data.json";
+import { introText, status } from "../../../../../../data/data.json";
 import IntroGif from "../../../../../../assets/images/elements/intro-gif.gif";
 import ResumePDF from "../../../../../../assets/docs/mahdi-adham-resume.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -30,10 +30,12 @@ const Intro = () => {
                     <div className="size-11 overflow-hidden shadow-neon-sm flex justify-center items-center rounded-md">
                         <img src={IntroGif} alt="intro-image" />
                     </div>
-                    <div className="size-3 bg-emerald-700 rounded-full flex justify-center items-center">
-                        <div className="bg-emerald-700 rounded-full size-3 animate-ping"></div>
+                    <div className={`size-3 ${status ? "bg-emerald-700" : "bg-red-600"} rounded-full flex justify-center items-center`}>
+                        <div className={`${status ? "bg-emerald-700" : "bg-red-600"} rounded-full size-3 animate-ping`} />
                     </div>
-                    <span className="capitalize text-gray-600 text-sm">open to work</span>
+                    <span className="capitalize text-gray-600 text-sm">
+                        {status ? "open to work" : "busy"}
+                    </span>
                 </div>
                 <div>
                     <TypeAnimation className="font-ubuntuMedium text-white text-6xl capitalize custom-title-leading w-130 h-50 leading-17"
@@ -52,14 +54,14 @@ const Intro = () => {
                     />
                 </div>
                 <div className="flex justify-start items-center gap-4 mt-5">
-                    <a href={ResumePDF} download className="bg-emerald-700 flex justify-center items-center gap-3 rounded-lg px-5 h-12 capitalize" onClick={handleDownload}>
+                    <a href={ResumePDF} download className="bg-emerald-700 border-2 border-emerald-700 flex justify-center items-center gap-3 rounded-lg px-5 h-12 capitalize hover:bg-transparent hover:text-emerald-600 transition-all duration-300 font-ubuntuMedium hover:*:border-emerald-600 hover:*:border-t-transparent" onClick={handleDownload}>
                         download cV
                         {loading ?
                             <div className="animate-spin size-5 border-2 border-black border-b-transparent rounded-full"></div>
                             : <MdOutlineFileDownload size={25} />
                         }
                     </a>
-                    <a href="#about" className="bg-slate-800 text-white flex justify-center items-center gap-3 rounded-lg px-5 h-12 capitalize">
+                    <a href="#about" className="bg-slate-800 border-2 border-slate-800 transition-all duration-300 hover:bg-transparent hover:text-slate-500 text-white flex justify-center items-center gap-3 rounded-lg px-5 h-12 capitalize">
                         scroll down
                         <IoMdArrowDown size={22} />
                     </a>

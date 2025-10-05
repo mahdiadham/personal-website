@@ -2401,6 +2401,7 @@ __metadata:
     react-lazyload: "npm:^3.2.1"
     react-router: "npm:^7.9.3"
     react-type-animation: "npm:^3.2.0"
+    swiper: "npm:^12.0.2"
     tailwindcss: "npm:^4.1.13"
     vite: "npm:^7.1.7"
   languageName: unknown
@@ -2929,6 +2930,13 @@ __metadata:
   dependencies:
     has-flag: "npm:^4.0.0"
   checksum: 10c0/afb4c88521b8b136b5f5f95160c98dee7243dc79d5432db7efc27efb219385bbc7d9427398e43dd6cc730a0f87d5085ce1652af7efbe391327bc0a7d0f7fc124
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^12.0.2":
+  version: 12.0.2
+  resolution: "swiper@npm:12.0.2"
+  checksum: 10c0/e7826eb5973828c622a30f321dc7740300a32666d26810b381e2498ad60f2f84e070058a1aa0ee32acce8a6d31f2d2919c388b2e5921db45690c59af41b1c7b8
   languageName: node
   linkType: hard
 
