@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .form-label {
+        @apply text-slate-100 text-base capitalize font-medium;
+    }
+
+    .form-input {
+        @apply bg-slate-900 border-1 border-slate-600 rounded-md p-3 focus:outline-none mt-2 w-full text-white placeholder:text-slate-500 placeholder:capitalize focus:border-teal-700 transition-all duration-300;
+    }
+
+    textarea.form-input {
+        @apply min-h-37 max-h-62;
+    }
+}

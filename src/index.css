@@ -5,11 +5,13 @@
   src: url("./assets/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
   font-family: "UbuntuMedium";
   src: url("./assets/fonts/ubuntu/Ubuntu-Medium.ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
   font-family: "UbuntuBold";
   src: url("./assets/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype");
@@ -20,14 +22,16 @@
   --font-ubuntuRegular: UbuntuRegular;
   --font-ubuntuMedium: UbuntuMedium;
   --font-ubuntuBold: UbuntuBold;
-
+  
   --breakpoint-xs: 320px;
-
+  
   --radius-custom: 68% 32% 25% 75% / 59% 47% 53% 41%;
-
+  
   --shadow-neon-sm: 0 0 10px #059669;
   --shadow-neon: 0 0 1rem #059669, 0 0 2rem #059669;
   --shadow-custom-neon: 0 0 1.5rem #059669;
+  
+  --shadow-red-neon-sm: 0 0 10px oklch(63.7% 0.237 25.331);
 }
 
 @utility container {
@@ -38,20 +42,19 @@
   body {
     @apply bg-slate-950 relative;
   }
+
   body::before,
   body::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: -15%;
     height: 600px;
     width: 600px;
     border-radius: 50%;
-    background: radial-gradient(
-      circle at center,
-      rgba(255, 0, 182, 0.30),
-      rgba(255, 0, 182, 0.05) 60%,
-      transparent 100%
-    );
+    background: radial-gradient(circle at center,
+        rgba(255, 0, 182, 0.30),
+        rgba(255, 0, 182, 0.05) 60%,
+        transparent 100%);
     filter: blur(80px);
     z-index: -1;
     animation: pulseGlow 8s ease-in-out infinite alternate;
@@ -59,7 +62,7 @@
 
   body::before {
     left: -18%;
-    top: 50%;
+    top: 30%;
   }
 
   body::after {
@@ -72,6 +75,7 @@
       transform: scale(1);
       opacity: 0.8;
     }
+
     100% {
       transform: scale(1.1);
       opacity: 1;

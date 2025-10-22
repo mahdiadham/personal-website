@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router";
 import { routes } from "./router/web/routes";
-import Header from "./layouts/web/header";
+import Header from "./layouts/web/Header";
+import Footer from "./layouts/web/Footer";
 
 const App = () => {
   const router = useRoutes(routes);
@@ -8,9 +9,10 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="mt-35">
+      <main>
         {router}
       </main>
+      <Footer />
     </>
   );
 }

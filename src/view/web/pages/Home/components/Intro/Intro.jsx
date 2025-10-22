@@ -18,7 +18,7 @@ const Intro = () => {
     }
 
     return (
-        <div className="container flex justify-between items-center">
+        <div className="container flex justify-between items-center mt-35">
             <motion.div
                 className="flex flex-col justify-start items-start gap-y-6"
                 initial={{x: -300, opacity: 0}}
@@ -27,11 +27,11 @@ const Intro = () => {
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <div className="flex justify-start items-center gap-3">
-                    <div className="size-11 overflow-hidden shadow-neon-sm flex justify-center items-center rounded-md">
+                    <div className={`size-11 overflow-hidden flex justify-center items-center rounded-md ${status ? "shadow-neon-sm" : "shadow-red-neon-sm"}`}>
                         <img src={IntroGif} alt="intro-image" />
                     </div>
-                    <div className={`size-3 ${status ? "bg-emerald-700" : "bg-red-600"} rounded-full flex justify-center items-center`}>
-                        <div className={`${status ? "bg-emerald-700" : "bg-red-600"} rounded-full size-3 animate-ping`} />
+                    <div className={`size-3 ${status ? "bg-emerald-700" : "bg-red-500"} rounded-full flex justify-center items-center`}>
+                        <div className={`${status ? "bg-emerald-700" : "bg-red-500"} rounded-full size-3 animate-ping`} />
                     </div>
                     <span className="capitalize text-gray-600 text-sm">
                         {status ? "open to work" : "busy"}

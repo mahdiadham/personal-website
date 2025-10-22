@@ -10,8 +10,12 @@
             "path": "#about"
         },
         {
-            "title": "work",
-            "path": "#work"
+            "title": "skills",
+            "path": "#skills"
+        },
+        {
+            "title": "portfolio",
+            "path": "#portfolio"
         }
     ],
     "introText": {
@@ -23,7 +27,7 @@
         "title": "about me",
         "description": "I am a MERN Stack Developer specializing in designing and developing modern, scalable, and high-performance web applications. With expertise in React js Node.js, Express, and MongoDB and a deep understanding of client-side and server-side architecture, I deliver efficient and reliable technical solutions. My experience working in cohesive and dynamic teams has enabled me to drive projects with a strong focus on quality, performance, and user experience. I am committed to following Clean Code principles, building modular and maintainable structures, and implementing industry best practices in all software development endeavors. Continuous learning and leveraging the latest technologies, particularly within the JavaScript ecosystem, are integral parts of my professional approach. My goal is to create solutions that, in addition to technical excellence, deliver real value to both users and organizations.",
         "projects": 110,
-        "yearsOfExperience": 5
+        "yearsOfExperience": 4
     },
     "technologies": {
         "title": "essential tools i use",
@@ -40,29 +44,9 @@
                 "icon": "/src/assets/icons/CSS.webp"
             },
             {
-                "name": "JavaScript",
-                "role": "client-side scripting",
-                "icon": "/src/assets/icons/JavaScript.webp"
-            },
-            {
                 "name": "Material UI",
                 "role": "design system",
                 "icon": "/src/assets/icons/MaterialUI-Dark.webp"
-            },
-            {
-                "name": "React",
-                "role": "interactive UIs",
-                "icon": "/src/assets/icons/React-Dark.webp"
-            },
-            {
-                "name": "Redux",
-                "role": "state management",
-                "icon": "/src/assets/icons/Redux.webp"
-            },
-            {
-                "name": "NextJS",
-                "role": "server rendering",
-                "icon": "/src/assets/icons/NextJS-Dark.webp"
             },
             {
                 "name": "Docker",
@@ -90,6 +74,26 @@
                 "icon": "/src/assets/icons/ExpressJS-Dark.webp"
             },
             {
+                "name": "JavaScript",
+                "role": "client-side scripting",
+                "icon": "/src/assets/icons/JavaScript.webp"
+            },
+            {
+                "name": "NextJS",
+                "role": "server rendering",
+                "icon": "/src/assets/icons/NextJS-Dark.webp"
+            },
+            {
+                "name": "React",
+                "role": "interactive UIs",
+                "icon": "/src/assets/icons/React-Dark.webp"
+            },
+            {
+                "name": "Redux",
+                "role": "state management",
+                "icon": "/src/assets/icons/Redux.webp"
+            },
+            {
                 "name": "TailwindCSS",
                 "role": "utility-first styling",
                 "icon": "/src/assets/icons/TailwindCSS-Dark.webp"
@@ -108,6 +112,95 @@
                 "name": "GitHub",
                 "role": "code hosting platform",
                 "icon": "/src/assets/icons/Github-Dark.webp"
+            },
+            {
+                "name": "Postman",
+                "role": "API testing",
+                "icon": "/src/assets/icons/Postman.webp"
+            },
+            {
+                "name": "Vite",
+                "role": "frontend build tool",
+                "icon": "/src/assets/icons/Vite-Dark.webp"
+            },
+            {
+                "name": "Figma",
+                "role": "UI design",
+                "icon": "/src/assets/icons/Figma-Dark.webp"
+            },
+            {
+                "name": "VSCode",
+                "role": "code editor",
+                "icon": "/src/assets/icons/VSCode-Dark.webp"
+            }
+        ]
+    },
+    "portfolios": {
+        "title": "my personal portfolio highlights",
+        "projects": [
+            {
+                "name": "business solutions",
+                "shortDescription": "virtual reality business solutions",
+                "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript"],
+                "image": "/src/assets/images/portfolios/business-solutions.webp",
+                "link": "/business-solutions",
+                "date": "08/22/2022"
+            },
+            {
+                "name": "listee",
+                "shortDescription": "explore our verified listings",
+                "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery", "SwiperJS", "AOS"],
+                "image": "/src/assets/images/portfolios/listee.webp",
+                "link": "/listee",
+                "date": "09/15/2023"
+            },
+            {
+                "name": "go corona",
+                "shortDescription": "take care of yours family’s health",
+                "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery"],
+                "image": "/src/assets/images/portfolios/go-corona.webp",
+                "link": "/go-corona",
+                "date": "03/13/2022"
+            },
+            {
+                "name": "weather app",
+                "shortDescription": "a simple weather app design",
+                "technologies": ["React", "Weather API"],
+                "image": "/src/assets/images/portfolios/weather-app.webp",
+                "link": "/weather-app",
+                "date": "10/22/2023"
+            },
+            {
+                "name": "digital clock",
+                "shortDescription": "a modern digital clock design",
+                "technologies": ["React"],
+                "image": "/src/assets/images/portfolios/digital-clock.webp",
+                "link": "/digital-clock",
+                "date": "11/08/2023"
+            }
+        ]
+    },
+    "contact": {
+        "title": "contact me for collaboration",
+        "description": "reach out today to discuss your project needs and start collaborating on something amazing !"
+    },
+    "copyright": {
+        "author": "mahdi adham",
+        "socialMedia": [
+            {
+                "name": "LinkedIn",
+                "url": "https://linkedin.com/in/mahdiadham3301",
+                "icon": "CiLinkedin"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/mahdiadham",
+                "icon": "TbBrandGithubFilled"
+            },
+            {
+                "name": "Instagram",
+                "url": "https://instagram.com/mahdi.a3301",
+                "icon": "FaInstagram"
             }
         ]
     }

@@ -209,6 +209,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@emailjs/browser@npm:4.4.1"
+  checksum: 10c0/91c3d1702818dc2db61f382f5295e469ce2e6acb4d683d65239e0a12dea8b635cd8cea60ef9a83f2aa8fce857b1f8f8663e02dcd7f529cbf902f1f0e6d0d1b44
+  languageName: node
+  linkType: hard
+
 "@emnapi/core@npm:^1.4.3, @emnapi/core@npm:^1.4.5":
   version: 1.5.0
   resolution: "@emnapi/core@npm:1.5.0"
@@ -2383,6 +2390,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "new-resume-react@workspace:."
   dependencies:
+    "@emailjs/browser": "npm:^4.4.1"
     "@eslint/js": "npm:^9.36.0"
     "@tailwindcss/vite": "npm:^4.1.13"
     "@types/react": "npm:^19.1.13"
@@ -2401,6 +2409,7 @@ __metadata:
     react-lazyload: "npm:^3.2.1"
     react-router: "npm:^7.9.3"
     react-type-animation: "npm:^3.2.0"
+    sweetalert2: "npm:^11.26.3"
     swiper: "npm:^12.0.2"
     tailwindcss: "npm:^4.1.13"
     vite: "npm:^7.1.7"
@@ -2930,6 +2939,13 @@ __metadata:
   dependencies:
     has-flag: "npm:^4.0.0"
   checksum: 10c0/afb4c88521b8b136b5f5f95160c98dee7243dc79d5432db7efc27efb219385bbc7d9427398e43dd6cc730a0f87d5085ce1652af7efbe391327bc0a7d0f7fc124
+  languageName: node
+  linkType: hard
+
+"sweetalert2@npm:^11.26.3":
+  version: 11.26.3
+  resolution: "sweetalert2@npm:11.26.3"
+  checksum: 10c0/cd7ab9f8800ffc75ec58fd5a103c57c4a2b1a3ac270631790bdda0610f908f790eac13efd85d7faec019eb99e65992cc893fc23290cd196f6c2f0162debcfe4c
   languageName: node
   linkType: hard
 
