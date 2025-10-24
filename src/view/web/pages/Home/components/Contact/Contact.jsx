@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "motion/react"
 import Swal from "sweetalert2";
 import emailjs from '@emailjs/browser';
 import { contact } from "../../../../../../data/data.json";
@@ -50,27 +51,39 @@ const Contact = () => {
         }
         catch (error) {
             Swal.fire({
-                    icon: 'error',
-                    title: 'Oops !',
-                    text: `Failed to send the message !\nPlease check your connection.\nOr\n${error}`,
-                    confirmButtonText: 'OK'
-                });
-                setFormData(initialFormData);
-                setIsSend(false);
+                icon: 'error',
+                title: 'Oops !',
+                text: `Failed to send the message !\nPlease check your connection.\nOr\n${error}`,
+                confirmButtonText: 'OK'
+            });
+            setFormData(initialFormData);
+            setIsSend(false);
         }
     }
 
     return (
         <div className="pt-40 container flex justify-between items-start" id="contact">
-            <div className="flex flex-col justify-start items-start gap-y-6 w-100">
+            <motion.div
+                className="flex flex-col justify-start items-start gap-y-6 w-100"
+                initial={{ x: -300, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true, amount: 0.3 }}
+            >
                 <h2 className="text-5xl text-white capitalize font-ubuntuBold leading-tight">
                     {contact?.title}
                 </h2>
                 <p className="text-base capitalize text-slate-600 font-ubuntuMedium">
                     {contact?.description}
                 </p>
-            </div>
-            <form className="flex flex-col gap-y-4 justify-start items-start *:w-full w-120" onSubmit={e => handleSubmit(e)}>
+            </motion.div>
+            <motion.form
+                className="flex flex-col gap-y-4 justify-start items-start *:w-full w-120" onSubmit={e => handleSubmit(e)}
+                initial={{ x: 300, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="flex gap-4 justify-between items-center">
                     <div>
                         <label htmlFor="name" className="form-label">
@@ -144,7 +157,7 @@ const Contact = () => {
                         : "send message"
                     }
                 </button>
-            </form>
+            </motion.form>
         </div>
     );
 }

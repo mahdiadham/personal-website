@@ -23,7 +23,8 @@
   --font-ubuntuMedium: UbuntuMedium;
   --font-ubuntuBold: UbuntuBold;
   
-  --breakpoint-xs: 320px;
+  --breakpoint-xs: 480px;
+  --breakpoint-xxs: 320px;
   
   --radius-custom: 68% 32% 25% 75% / 59% 47% 53% 41%;
   

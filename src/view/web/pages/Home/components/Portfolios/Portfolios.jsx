@@ -1,19 +1,30 @@
+import { motion } from "motion/react";
 import { portfolios } from "../../../../../../data/data.json";
 import PortfolioCard from "./components/PortfolioCard/PortfolioCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/bundle";
 
 const Portfolios = () => {
     return (
         <div className="container pt-40" id="portfolio">
-            <h2 className="text-white text-5xl font-ubuntuBold text-center capitalize">
+            <motion.h2
+                className="text-white text-5xl font-ubuntuBold text-center capitalize"
+                initial={{ y: 300, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true, amount: 0.3 }}
+            >
                 {portfolios?.title}
-            </h2>
+            </motion.h2>
             {portfolios?.projects?.length ?
-                <div className="flex justify-center items-start mt-15 gap-8 flex-wrap w-full">
+                <motion.div
+                    className="flex justify-center items-start mt-15 gap-8 flex-wrap w-full"
+                    initial={{ x: -300, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                >
                     <Swiper
                         slidesPerView={5}
                         centeredSlides={true}
@@ -32,7 +43,7 @@ const Portfolios = () => {
                             </SwiperSlide>
                         )}
                     </Swiper>
-                </div> :
+                </motion.div> :
                 <span className="text-slate-500 capitalize text-lg font-ubuntuBold">
                     no item to display
                 </span>

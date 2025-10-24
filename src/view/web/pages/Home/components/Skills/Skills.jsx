@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { technologies } from "../../../../../../data/data.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
@@ -8,18 +9,31 @@ import "swiper/css/bundle";
 const Skills = () => {
     return (
         <div className="container flex flex-col justify-start items-center pt-40" id="skills">
-            <h2 className="text-white capitalize text-5xl font-ubuntuBold">
-                {technologies?.title}
-            </h2>
-            <p className="text-slate-600 capitalize font-ubuntuMedium mt-7 text-lg">
-                {technologies?.description}
-            </p>
+            <motion.div
+                initial={{ x: 300, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true, amount: 0.3 }}
+            >
+                <h2 className="text-white text-center capitalize text-5xl font-ubuntuBold">
+                    {technologies?.title}
+                </h2>
+                <p className="text-slate-600 capitalize font-ubuntuMedium mt-7 text-lg">
+                    {technologies?.description}
+                </p>
+            </motion.div>
             {technologies?.list?.length ?
-                <div className="flex justify-start items-start gap-10 mt-10 w-full">
+                <motion.div
+                    className="flex justify-start items-start gap-10 mt-10 w-full"
+                    initial={{ y: 300, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                >
                     <Swiper
                         modules={[EffectCoverflow]}
                         slidesPerView={11}
-                        centeredSlides={true}                                       
+                        centeredSlides={true}
                         spaceBetween={1}
                         effect="coverflow"
                         coverflowEffect={{
@@ -50,7 +64,7 @@ const Skills = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div> :
+                </motion.div> :
                 <span className="text-slate-500 capitalize text-lg font-ubuntuBold">
                     no item to display
                 </span>
