@@ -23,9 +23,9 @@
   --font-ubuntuMedium: UbuntuMedium;
   --font-ubuntuBold: UbuntuBold;
   
-  --breakpoint-xs: 480px;
   --breakpoint-xxs: 320px;
-  
+  --breakpoint-xs: 480px;
+
   --radius-custom: 68% 32% 25% 75% / 59% 47% 53% 41%;
   
   --shadow-neon-sm: 0 0 10px #059669;
@@ -80,6 +80,26 @@
     100% {
       transform: scale(1.1);
       opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 320px) {
+    .xxs\:size-12 {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  
+  @media (min-width: 480px) {
+    .xxs\:size-15 {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+    .xs\:size-18 {
+      width: 4.5rem;
+      height: 4.5rem;
     }
   }
 }

@@ -4,7 +4,7 @@ const PortfolioCard = ({ data }) => {
     const { name, shortDescription, technologies, image, link, date } = data || {};
 
     return (
-        <div className="min-w-85 max-w-85 h-115 px-4 py-6 rounded-2xl flex flex-col justify-start items-start bg-gradient-to-bl from-[#151b29] to-[#0b0f19] transition hover:-translate-y-2 hover:border-teal-700 duration-300 text-white border border-slate-800 relative">
+        <div className="min-w-67 max-w-67 xs:!min-w-85 xs:!max-w-85 h-115 max-xs:!h-120 px-4 py-6 rounded-2xl flex flex-col justify-start items-start bg-gradient-to-bl from-[#151b29] to-[#0b0f19] transition hover:-translate-y-2 hover:border-teal-700 duration-300 text-white border border-slate-800 relative">
                         <h4 className="text-2xl font-ubuntuMedium capitalize">
                             {name}
                         </h4>

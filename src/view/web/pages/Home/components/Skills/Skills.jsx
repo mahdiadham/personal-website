@@ -8,17 +8,17 @@ import "swiper/css/bundle";
 
 const Skills = () => {
     return (
-        <div className="container flex flex-col justify-start items-center pt-40" id="skills">
+        <div className="container flex flex-col justify-start items-center pt-20 md:pt-40" id="skills">
             <motion.div
                 initial={{ x: 300, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <h2 className="text-white text-center capitalize text-5xl font-ubuntuBold">
+                <h2 className="text-white text-center capitalize text-5xl max-sm:text-4xl max-xs:!text-3xl font-ubuntuBold">
                     {technologies?.title}
                 </h2>
-                <p className="text-slate-600 capitalize font-ubuntuMedium mt-7 text-lg">
+                <p className="text-slate-600 capitalize font-ubuntuMedium mt-7 text-lg text-center w-auto max-md:text-base max-xs:!text-sm">
                     {technologies?.description}
                 </p>
             </motion.div>
@@ -31,6 +31,7 @@ const Skills = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <Swiper
+                        className="h-30 [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start"
                         modules={[EffectCoverflow]}
                         slidesPerView={11}
                         centeredSlides={true}
@@ -43,8 +44,28 @@ const Skills = () => {
                             modifier: 1,
                             slideShadows: false,
                         }}
-                        className="h-30 [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start"
                         initialSlide={Math.floor(technologies?.list?.length / 2 - 1)}
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 3.1,
+                                spaceBetween: 1
+                            },
+                            480: {
+                                slidesPerView: 4
+                            },
+                            640: {
+                                slidesPerView: 5
+                            },
+                            768: {
+                                slidesPerView: 7
+                            },
+                            1024: {
+                                slidesPerView: 9
+                            },
+                            1280: {
+                                slidesPerView: 11,
+                            },
+                        }}
                     >
                         {technologies?.list?.map((tech) => (
                             <SwiperSlide

@@ -62,29 +62,29 @@ const Contact = () => {
     }
 
     return (
-        <div className="pt-40 container flex justify-between items-start" id="contact">
+        <div className="pt-20 md:pt-40 container flex max-md:flex-col justify-between items-center md:items-start gap-y-10" id="contact">
             <motion.div
-                className="flex flex-col justify-start items-start gap-y-6 w-100"
+                className="flex flex-col justify-start items-start gap-y-6 w-full sm:w-100"
                 initial={{ x: -300, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <h2 className="text-5xl text-white capitalize font-ubuntuBold leading-tight">
+                <h2 className="text-4xl lg:text-5xl text-white capitalize font-ubuntuBold leading-tight max-md:text-center">
                     {contact?.title}
                 </h2>
-                <p className="text-base capitalize text-slate-600 font-ubuntuMedium">
+                <p className="text-sm xs:text-base capitalize text-slate-600 font-ubuntuMedium max-md:text-center">
                     {contact?.description}
                 </p>
             </motion.div>
             <motion.form
-                className="flex flex-col gap-y-4 justify-start items-start *:w-full w-120" onSubmit={e => handleSubmit(e)}
+                className="flex flex-col gap-y-4 justify-start items-start *:w-full w-full sm:w-120" onSubmit={e => handleSubmit(e)}
                 initial={{ x: 300, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <div className="flex gap-4 justify-between items-center">
+                <div className="flex max-sm:flex-col max-sm:*:w-full gap-4 justify-between items-center">
                     <div>
                         <label htmlFor="name" className="form-label">
                             name

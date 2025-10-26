@@ -14,8 +14,8 @@ const Footer = () => {
 
     return (
         <footer className="border-t-2 border-t-slate-800 mt-10">
-            <div className="container flex justify-between items-center py-4">
-                <span className="text-slate-500 capitalize text-base font-ubuntuBold">
+            <div className="container flex max-sm:flex-col justify-between items-center py-4 gap-y-5">
+                <span className="text-slate-500 capitalize text-base font-ubuntuBold text-center">
                     © {year} {copyright.author} - all rights reserved.
                 </span>
                 {copyright?.socialMedia?.length &&

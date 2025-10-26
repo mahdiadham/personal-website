@@ -7,9 +7,9 @@ import "swiper/css/bundle";
 
 const Portfolios = () => {
     return (
-        <div className="container pt-40" id="portfolio">
+        <div className="container pt-20 md:pt-40" id="portfolio">
             <motion.h2
-                className="text-white text-5xl font-ubuntuBold text-center capitalize"
+                className="text-white text-5xl max-sm:text-4xl max-xs:!text-2xl font-ubuntuBold text-center capitalize"
                 initial={{ y: 300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -26,11 +26,65 @@ const Portfolios = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <Swiper
+                        className="h-full [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start w-full"
                         slidesPerView={5}
                         centeredSlides={true}
                         spaceBetween={150}
                         initialSlide={Math.floor(portfolios?.projects?.length / 2)}
-                        className="h-full [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start w-full"
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 1
+                            },
+                            400: {
+                                slidesPerView: 1.4,
+                                spaceBetween: 20
+                            },
+                            450: {
+                                slidesPerView: 1.5,
+                                spaceBetween: 20
+                            },
+                            480: {
+                                slidesPerView: 1.35,
+                                spaceBetween: 30
+                            },
+                            520: {
+                                slidesPerView: 1.45,
+                                spaceBetween: 30
+                            },
+                            600: {
+                                slidesPerView: 1.6,
+                                spaceBetween: 30
+                            },
+                            640: {
+                                slidesPerView: 1.9,
+                                spaceBetween: 30
+                            },
+                            768: {
+                                slidesPerView: 2.3,
+                                spaceBetween: 30
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 30
+                            },
+                            1280: {
+                                slidesPerView: 4,
+                                spaceBetween: 150
+                            },
+                            1400: {
+                                slidesPerView: 4.25,
+                                spaceBetween: 150
+                            },
+                            1550: {
+                                slidesPerView: 4.8,
+                                spaceBetween: 150
+                            },
+                            1700: {
+                                slidesPerView: 5,
+                                spaceBetween: 150
+                            },
+                        }}
                     >
                         {portfolios?.projects?.map(portfolio =>
                             <SwiperSlide
