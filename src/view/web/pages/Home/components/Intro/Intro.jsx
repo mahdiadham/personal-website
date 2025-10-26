@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { introText, status } from "../../../../../../data/data.json";
-import IntroGif from "../../../../../../assets/images/elements/intro-gif.gif";
-import ResumePDF from "../../../../../../assets/docs/mahdi-adham-resume.pdf";
+import IntroGif from "../../../../../../../public/assets/images/elements/intro-gif.gif";
+import ResumePDF from "../../../../../../../public/assets/docs/mahdi-adham-resume.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoMdArrowDown } from "react-icons/io";
 import { motion } from "motion/react";

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import MiniLogo from "../../../assets/logo/mini-logo.webp";
+import MiniLogo from "../../../../public/assets/logo/mini-logo.webp";
 import { menu } from "../../../data/data.json";
 import { Link, useLocation } from "react-router";
 import { FaBars } from "react-icons/fa";

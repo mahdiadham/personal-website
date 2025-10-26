@@ -1,4 +1,4 @@
-import vector from "../../../assets/images/elements/vector.webp";
+import vector from "../../../../public/assets/images/elements/vector.webp";
 import { Link } from "react-router";
 import { FaArrowRight } from "react-icons/fa6";
 import "./_404.css";

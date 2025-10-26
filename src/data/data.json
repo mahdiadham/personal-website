@@ -36,102 +36,102 @@
             {
                 "name": "HTML",
                 "role": "content structure",
-                "icon": "/src/assets/icons/HTML.webp"
+                "icon": "/assets/icons/HTML.webp"
             },
             {
                 "name": "CSS",
                 "role": "user interface",
-                "icon": "/src/assets/icons/CSS.webp"
+                "icon": "/assets/icons/CSS.webp"
             },
             {
                 "name": "Material UI",
                 "role": "design system",
-                "icon": "/src/assets/icons/MaterialUI-Dark.webp"
+                "icon": "/assets/icons/MaterialUI-Dark.webp"
             },
             {
                 "name": "Docker",
                 "role": "containerization",
-                "icon": "/src/assets/icons/Docker.webp"
+                "icon": "/assets/icons/Docker.webp"
             },
             {
                 "name": "MongoDB",
                 "role": "NoSQL database",
-                "icon": "/src/assets/icons/MongoDB.webp"
+                "icon": "/assets/icons/MongoDB.webp"
             },
             {
                 "name": "MySQL",
                 "role": "relational database",
-                "icon": "/src/assets/icons/MySQL-Dark.webp"
+                "icon": "/assets/icons/MySQL-Dark.webp"
             },
             {
                 "name": "NodeJS",
                 "role": "server-side runtime",
-                "icon": "/src/assets/icons/NodeJS-Dark.webp"
+                "icon": "/assets/icons/NodeJS-Dark.webp"
             },
             {
                 "name": "ExpressJS",
                 "role": "backend framework",
-                "icon": "/src/assets/icons/ExpressJS-Dark.webp"
+                "icon": "/assets/icons/ExpressJS-Dark.webp"
             },
             {
                 "name": "JavaScript",
                 "role": "client-side scripting",
-                "icon": "/src/assets/icons/JavaScript.webp"
+                "icon": "/assets/icons/JavaScript.webp"
             },
             {
                 "name": "NextJS",
                 "role": "server rendering",
-                "icon": "/src/assets/icons/NextJS-Dark.webp"
+                "icon": "/assets/icons/NextJS-Dark.webp"
             },
             {
                 "name": "React",
                 "role": "interactive UIs",
-                "icon": "/src/assets/icons/React-Dark.webp"
+                "icon": "/assets/icons/React-Dark.webp"
             },
             {
                 "name": "Redux",
                 "role": "state management",
-                "icon": "/src/assets/icons/Redux.webp"
+                "icon": "/assets/icons/Redux.webp"
             },
             {
                 "name": "TailwindCSS",
                 "role": "utility-first styling",
-                "icon": "/src/assets/icons/TailwindCSS-Dark.webp"
+                "icon": "/assets/icons/TailwindCSS-Dark.webp"
             },
             {
                 "name": "Bootstrap",
                 "role": "UI framework",
-                "icon": "/src/assets/icons/Bootstrap.webp"
+                "icon": "/assets/icons/Bootstrap.webp"
             },
             {
                 "name": "Git",
                 "role": "version control",
-                "icon": "/src/assets/icons/Git.webp"
+                "icon": "/assets/icons/Git.webp"
             },
             {
                 "name": "GitHub",
                 "role": "code hosting platform",
-                "icon": "/src/assets/icons/Github-Dark.webp"
+                "icon": "/assets/icons/Github-Dark.webp"
             },
             {
                 "name": "Postman",
                 "role": "API testing",
-                "icon": "/src/assets/icons/Postman.webp"
+                "icon": "/assets/icons/Postman.webp"
             },
             {
                 "name": "Vite",
                 "role": "frontend build tool",
-                "icon": "/src/assets/icons/Vite-Dark.webp"
+                "icon": "/assets/icons/Vite-Dark.webp"
             },
             {
                 "name": "Figma",
                 "role": "UI design",
-                "icon": "/src/assets/icons/Figma-Dark.webp"
+                "icon": "/assets/icons/Figma-Dark.webp"
             },
             {
                 "name": "VSCode",
                 "role": "code editor",
-                "icon": "/src/assets/icons/VSCode-Dark.webp"
+                "icon": "/assets/icons/VSCode-Dark.webp"
             }
         ]
     },
@@ -142,7 +142,7 @@
                 "name": "business solutions",
                 "shortDescription": "virtual reality business solutions",
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript"],
-                "image": "/src/assets/images/portfolios/business-solutions.webp",
+                "image": "/assets/images/portfolios/business-solutions.webp",
                 "link": "/business-solutions",
                 "date": "08/22/2022"
             },
@@ -150,7 +150,7 @@
                 "name": "listee",
                 "shortDescription": "explore our verified listings",
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery", "SwiperJS", "AOS"],
-                "image": "/src/assets/images/portfolios/listee.webp",
+                "image": "/assets/images/portfolios/listee.webp",
                 "link": "/listee",
                 "date": "09/15/2023"
             },
@@ -158,7 +158,7 @@
                 "name": "go corona",
                 "shortDescription": "take care of yours family’s health",
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery"],
-                "image": "/src/assets/images/portfolios/go-corona.webp",
+                "image": "/assets/images/portfolios/go-corona.webp",
                 "link": "/go-corona",
                 "date": "03/13/2022"
             },
@@ -166,7 +166,7 @@
                 "name": "weather app",
                 "shortDescription": "a simple weather app design",
                 "technologies": ["React", "Weather API"],
-                "image": "/src/assets/images/portfolios/weather-app.webp",
+                "image": "/assets/images/portfolios/weather-app.webp",
                 "link": "/weather-app",
                 "date": "10/22/2023"
             },
@@ -174,7 +174,7 @@
                 "name": "digital clock",
                 "shortDescription": "a modern digital clock design",
                 "technologies": ["React"],
-                "image": "/src/assets/images/portfolios/digital-clock.webp",
+                "image": "/assets/images/portfolios/digital-clock.webp",
                 "link": "/digital-clock",
                 "date": "11/08/2023"
             }

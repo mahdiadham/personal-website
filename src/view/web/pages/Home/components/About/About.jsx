@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { aboutMe } from "../../../../../../data/data.json";
-import AboutUsImage from "../../../../../../assets/images/elements/about-us-image.webp";
+import AboutUsImage from "../../../../../../../public/assets/images/elements/about-us-image.webp";
 import "./style.css";
 
 const About = () => {

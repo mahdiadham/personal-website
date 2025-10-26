@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: "UbuntuRegular";
-  src: url("./assets/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  src: url("../public/assets/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "UbuntuMedium";
-  src: url("./assets/fonts/ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  src: url("../public/assets/fonts/ubuntu/Ubuntu-Medium.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "UbuntuBold";
-  src: url("./assets/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  src: url("../public/assets/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype");
   font-display: swap;
 }
 
