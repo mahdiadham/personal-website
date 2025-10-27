@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="pt-20 md:pt-40 container flex max-md:flex-col justify-between items-center md:items-start gap-y-10" id="contact">
             <motion.div
                 className="flex flex-col justify-start items-start gap-y-6 w-full sm:w-100"
-                initial={{ x: -300, opacity: 0 }}
+                initial={{ x: -250, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}

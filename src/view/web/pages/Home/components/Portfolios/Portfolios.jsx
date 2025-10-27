@@ -20,7 +20,7 @@ const Portfolios = () => {
             {portfolios?.projects?.length ?
                 <motion.div
                     className="flex justify-center items-start mt-15 gap-8 flex-wrap w-full"
-                    initial={{ x: -300, opacity: 0 }}
+                    initial={{ x: -200, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true, amount: 0.3 }}
@@ -33,11 +33,11 @@ const Portfolios = () => {
                         initialSlide={Math.floor(portfolios?.projects?.length / 2)}
                         breakpoints={{
                             320: {
-                                slidesPerView: 1,
+                                slidesPerView: 1.21,
                                 spaceBetween: 1
                             },
                             400: {
-                                slidesPerView: 1.4,
+                                slidesPerView: 1.3,
                                 spaceBetween: 20
                             },
                             450: {
@@ -45,7 +45,7 @@ const Portfolios = () => {
                                 spaceBetween: 20
                             },
                             480: {
-                                slidesPerView: 1.35,
+                                slidesPerView: 1.53,
                                 spaceBetween: 30
                             },
                             520: {

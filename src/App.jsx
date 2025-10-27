@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router";
 import { routes } from "./router/web/routes";
-import Header from "./layouts/web/Header";
+import Header from "./layouts/web/header";
 import Footer from "./layouts/web/Footer";
 
 const App = () => {

@@ -47,7 +47,7 @@ const Skills = () => {
                         initialSlide={Math.floor(technologies?.list?.length / 2 - 1)}
                         breakpoints={{
                             320: {
-                                slidesPerView: 3.1,
+                                slidesPerView: 3.3,
                                 spaceBetween: 1
                             },
                             480: {

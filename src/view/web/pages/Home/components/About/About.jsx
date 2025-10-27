@@ -5,7 +5,7 @@ import "./style.css";
 
 const About = () => {
     return (
-        <div className="lg:container max-md:container max-lg:px-10 pt-45 flex max-md:flex-col justify-between items-center gap-y-20" id="about">
+        <div className="lg:container max-md:container pt-25 md:pt-45 flex max-md:flex-col justify-between items-center gap-y-20" id="about">
             <div className="basis-1/2 max-lg:basis-2/3">
                 <motion.h2
                     className="capitalize text-4xl text-white font-ubuntuBold mb-5"
@@ -18,7 +18,7 @@ const About = () => {
                 </motion.h2>
                 <motion.p
                     className="text-white text-justify capitalize text-base max-lg:text-sm leading-8"
-                    initial={{ x: -300, opacity: 0 }}
+                    initial={{ x: -200, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true, amount: 0.3 }}
@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <motion.div
                 className="max-lg:basis-1/3"
-                initial={{ x: 500, opacity: 0 }}
+                initial={{ x: 300, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}

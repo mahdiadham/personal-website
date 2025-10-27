@@ -21,7 +21,7 @@ const Intro = () => {
         <div className="container flex max-sm:flex-col justify-between items-center gap-y-20 sm:mt-35 mt-20">
             <motion.div
                 className="flex flex-col justify-start items-start gap-y-6"
-                initial={{x: -300, opacity: 0}}
+                initial={{x: -200, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
                 transition={{duration: 0.6}}
                 viewport={{ once: true, amount: 0.3 }}
