@@ -2,14 +2,16 @@ import { motion } from "motion/react";
 import { portfolios } from "../../../../../../data/data.json";
 import PortfolioCard from "./components/PortfolioCard/PortfolioCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import "swiper/css";
+import 'swiper/css/pagination';
 import "swiper/css/bundle";
 
 const Portfolios = () => {
     return (
         <div className="container pt-20 md:pt-40" id="portfolio">
             <motion.h2
-                className="text-white text-5xl max-sm:text-4xl max-xs:!text-2xl font-ubuntuBold text-center capitalize"
+                className="text-white text-5xl max-sm:text-4xl max-xs:!text-3xl font-ubuntuBold text-center capitalize"
                 initial={{ y: 300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -26,7 +28,14 @@ const Portfolios = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <Swiper
-                        className="h-full [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start w-full"
+                        className="h-full !pb-10 [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start w-full [&>.swiper-pagination]:!-bottom-0"
+                        modules={[ Navigation, Pagination, Scrollbar, A11y]}
+                        pagination={{
+                            clickable: true,
+                            renderBullet: function (index, className) {
+                                return '<span class="' + className + ' !bg-emerald-500 !w-2 !h-2 !rounded-full"></span>';
+                            },
+                        }}
                         slidesPerView={5}
                         centeredSlides={true}
                         spaceBetween={150}

@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
 import { technologies } from "../../../../../../data/data.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import "swiper/css";
+import 'swiper/css/pagination';
 import "swiper/css/effect-coverflow";
 import "swiper/css/bundle";
 
@@ -10,7 +11,7 @@ const Skills = () => {
     return (
         <div className="container flex flex-col justify-start items-center pt-20 md:pt-40" id="skills">
             <motion.div
-                initial={{ x: 300, opacity: 0 }}
+                initial={{ x: 250, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -31,8 +32,16 @@ const Skills = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <Swiper
-                        className="h-30 [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start"
-                        modules={[EffectCoverflow]}
+                        className="h-30 !pb-40 [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start [&>.swiper-pagination]:!-bottom-0"
+                        modules={[EffectCoverflow, Navigation, Pagination, Scrollbar, A11y]}
+                        pagination={{
+                            clickable: true,
+                            dynamicBullets: true,
+                            dynamicMainBullets: 3,
+                            renderBullet: function (index, className) {
+                                return '<span class="' + className + ' !bg-emerald-500 !w-2 !h-2 !rounded-full"></span>';
+                            },
+                        }}
                         slidesPerView={11}
                         centeredSlides={true}
                         spaceBetween={1}
@@ -49,6 +58,10 @@ const Skills = () => {
                             320: {
                                 slidesPerView: 3.3,
                                 spaceBetween: 1
+                            },
+                            430: {
+                                slidesPerView: 3.8,
+                                spaceBetween: 15
                             },
                             480: {
                                 slidesPerView: 4

@@ -79,7 +79,7 @@ const Contact = () => {
             </motion.div>
             <motion.form
                 className="flex flex-col gap-y-4 justify-start items-start *:w-full w-full sm:w-120" onSubmit={e => handleSubmit(e)}
-                initial={{ x: 300, opacity: 0 }}
+                initial={{ x: 250, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}

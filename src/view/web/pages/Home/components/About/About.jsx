@@ -9,7 +9,7 @@ const About = () => {
             <div className="basis-1/2 max-lg:basis-2/3">
                 <motion.h2
                     className="capitalize text-4xl text-white font-ubuntuBold mb-5"
-                    initial={{ x: 300, opacity: 0 }}
+                    initial={{ x: 250, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true, amount: 0.3 }}
@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <motion.div
                 className="max-lg:basis-1/3"
-                initial={{ x: 300, opacity: 0 }}
+                initial={{ x: 250, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
