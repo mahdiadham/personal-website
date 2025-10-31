@@ -13,9 +13,9 @@ const PortfolioCard = ({ data }) => {
                         </p>
                         <div className="overflow-hidden rounded-lg my-4 w-full h-50 relative cursor-pointer">
                             <img src={image} alt={name || "portfolio"} className="rounded-lg size-full object-cover transition-all duration-300 hover:scale-110" />
-                            <Link to={link} className="absolute z-90 bg-teal-700 bottom-3 left-3 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1">
+                            <a href={link} rel="noopener noreferrer" target="_blank" className="absolute z-90 bg-teal-700 bottom-3 left-3 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1">
                                 view project
-                            </Link>
+                            </a>
                         </div>
                         {technologies?.length &&
                             <div className="flex justify-start items-center flex-wrap mt-1">
