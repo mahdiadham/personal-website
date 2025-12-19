@@ -23,7 +23,7 @@ const Footer = () => {
                         {copyright?.socialMedia?.map(media => {
                             const IconComponent = iconsMap[media.icon];
                             return (
-                                <a href={media?.url} className="block text-white border-1 border-teal-900 rounded-lg p-1 bg-gray-900">
+                                <a key={media?.name} href={media?.url} className="block text-white border-1 border-teal-900 rounded-lg p-1 bg-gray-900">
                                     <IconComponent size={30} />
                                 </a>
                             );

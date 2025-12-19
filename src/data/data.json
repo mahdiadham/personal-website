@@ -144,6 +144,7 @@
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript"],
                 "image": "/assets/images/portfolios/business-solutions.webp",
                 "link": "/business-solutions",
+                "github": "https://github.com/mahdiadham/business-solutions",
                 "date": "08/22/2022"
             },
             {
@@ -152,6 +153,7 @@
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery", "SwiperJS", "AOS"],
                 "image": "/assets/images/portfolios/listee.webp",
                 "link": "/listee",
+                "github": "https://github.com/mahdiadham/listee",
                 "date": "09/15/2023"
             },
             {
@@ -160,7 +162,17 @@
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery"],
                 "image": "/assets/images/portfolios/go-corona.webp",
                 "link": "/go-corona",
+                "github": "",
                 "date": "03/13/2022"
+            },
+            {
+                "name": "banks name detector",
+                "shortDescription": "a fake gateway that detects your iranian bank name",
+                "technologies": ["React", "TailwindCSS", "Zod", "React Hot Toast"],
+                "image": "/assets/images/portfolios/bank-name-detector.webp",
+                "link": "/bank-name-detector",
+                "github": "https://github.com/mahdiadham/bank-name-detector",
+                "date": "12/15/2025"
             },
             {
                 "name": "weather app",
@@ -168,6 +180,7 @@
                 "technologies": ["React", "Weather API"],
                 "image": "/assets/images/portfolios/weather-app.webp",
                 "link": "/weather-app",
+                "github": "https://github.com/mahdiadham/weather-app",
                 "date": "10/22/2023"
             },
             {
@@ -176,6 +189,7 @@
                 "technologies": ["React"],
                 "image": "/assets/images/portfolios/digital-clock.webp",
                 "link": "/digital-clock",
+                "github": "https://github.com/mahdiadham/digital-clock",
                 "date": "11/08/2023"
             }
         ]
