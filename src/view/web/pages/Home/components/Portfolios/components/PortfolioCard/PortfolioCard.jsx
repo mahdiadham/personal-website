@@ -14,12 +14,12 @@ const PortfolioCard = ({ data }) => {
                         <div className="overflow-hidden rounded-lg my-4 w-full h-50 cursor-pointer">
                             <img src={image} alt={name || "portfolio"} className="rounded-lg size-full object-cover transition-all duration-300 hover:scale-110" />
                         </div>
-                        <div className="flex justify-between items-center w-full mb-4">
-                            <Link to={link} className=" z-90 border border-teal-500 text-teal-500 bottom-3 left-3 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1 capitalize">
+                        <div className="w-full flex justify-between items-center mb-4">
+                            <Link to={link} className="z-90 border border-teal-500 text-teal-500 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1 capitalize">
                                 view project
                             </Link>
                             {github &&
-                                <Link to={github} className=" z-90 border border-teal-500 text-teal-500 bottom-3 right-3 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1 capitalize">
+                                <Link to={github} className="z-90 border border-teal-500 text-teal-500 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1 capitalize">
                                     github repo
                                 </Link>
                             }

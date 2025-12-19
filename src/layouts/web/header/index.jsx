@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="sticky top-6 left-0 right-0 z-100 container">
+            <header className="fixed top-6 left-0 right-0 z-100 container">
                 {menu?.length &&
                     <div className={`container flex flex-col justify-start items-center px-6 py-1 rounded-2xl absolute top-25 left-0 w-50 bg-white/10 backdrop-blur-lg border-1 border-teal-900 text-white capitalize transition-all duration-300 overflow-hidden lg:hidden ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full pointer-events-none"} divide-y-1 divide-slate-700 *:w-full *:text-center *:py-3`}>
                         {menu?.map(item =>
