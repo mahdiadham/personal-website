@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .card-btn {
+        @apply z-90 border border-teal-500 text-teal-500 py-1.5 px-4 rounded-md transition-all duration-300 hover:-translate-y-1 capitalize;
+    }
+}
