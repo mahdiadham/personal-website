@@ -1,19 +1,9 @@
-import { useRoutes } from "react-router";
-import { routes } from "./router/web/routes";
-import Header from "./layouts/web/header";
-import Footer from "./layouts/web/Footer";
+import { RouterProvider } from "react-router";
+import routes from "./router/web/routes";
 
 const App = () => {
-  const router = useRoutes(routes);
-
   return (
-    <>
-      <Header />
-      <main>
-        {router}
-      </main>
-      <Footer />
-    </>
+    <RouterProvider router={routes} />
   );
 }
 

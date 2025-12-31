@@ -1,3 +1,4 @@
+import { createBrowserRouter } from "react-router";
 import { lazy, Suspense } from "react";
 import { Navigate } from "react-router";
 import { IoHome } from "react-icons/io5";
@@ -6,7 +7,7 @@ import Loading from "../../components/Loading/Loading";
 const Home = lazy(() => import("../../view/web/pages/Home"));
 const _404 = lazy(() => import("../../view/errors/404/_404"));
 
-export const routes = [
+const routes = createBrowserRouter([
     {
         path: "/",
         title: "home",
@@ -27,4 +28,6 @@ export const routes = [
         path: '*',
         element: <Navigate to="/404" replace />
     }
-];
+]);
+
+export default routes;
