@@ -1,31 +1,27 @@
-import { createBrowserRouter } from "react-router";
-import { lazy, Suspense } from "react";
-import { Navigate } from "react-router";
-import { IoHome } from "react-icons/io5";
-import Loading from "../../components/Loading/Loading";
+import { createBrowserRouter, Navigate } from "react-router";
+import { lazy } from "react";
 
 const Home = lazy(() => import("../../view/web/pages/Home"));
+const MainLayout = lazy(() => import("../../layouts/web/Main/MainLayout"));
 const _404 = lazy(() => import("../../view/errors/404/_404"));
 
 const routes = createBrowserRouter([
     {
         path: "/",
-        title: "home",
-        icon: <IoHome size={18} />,
-        element:
-            <Suspense fallback={<Loading />}>
-                <Home />
-            </Suspense>
+        element: <MainLayout />,
+        children: [
+            {
+                index: true,
+                element: <Home />
+            }
+        ]
     },
     {
-        path: '/404',
-        element:
-            <Suspense fallback={<Loading />}>
-                <_404 />
-            </Suspense>
+        path: "/404",
+        element: <_404 />
     },
     {
-        path: '*',
+        path: "*",
         element: <Navigate to="/404" replace />
     }
 ]);
