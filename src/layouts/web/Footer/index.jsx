@@ -7,9 +7,9 @@ const Footer = () => {
     const year = new Date().getFullYear();
 
     const iconsMap = {
-        "CiLinkedin": CiLinkedin,
-        "TbBrandGithubFilled": TbBrandGithubFilled,
-        "FaInstagram": FaInstagram
+        CiLinkedin: CiLinkedin,
+        TbBrandGithubFilled: TbBrandGithubFilled,
+        FaInstagram: FaInstagram
     }
 
     return (

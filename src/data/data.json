@@ -26,8 +26,8 @@
     "aboutMe": {
         "title": "about me",
         "description": "I am a MERN Stack Developer specializing in designing and developing modern, scalable, and high-performance web applications. With expertise in React js Node.js, Express, and MongoDB and a deep understanding of client-side and server-side architecture, I deliver efficient and reliable technical solutions. My experience working in cohesive and dynamic teams has enabled me to drive projects with a strong focus on quality, performance, and user experience. I am committed to following Clean Code principles, building modular and maintainable structures, and implementing industry best practices in all software development endeavors. Continuous learning and leveraging the latest technologies, particularly within the JavaScript ecosystem, are integral parts of my professional approach. My goal is to create solutions that, in addition to technical excellence, deliver real value to both users and organizations.",
-        "projects": 110,
-        "yearsOfExperience": 4
+        "projects": 115,
+        "yearsOfExperience": 5
     },
     "technologies": {
         "title": "essential tools i use",
@@ -77,6 +77,11 @@
                 "name": "JavaScript",
                 "role": "client-side scripting",
                 "icon": "/assets/icons/JavaScript.webp"
+            },
+            {
+                "name": "TypeScript",
+                "role": "static typed JavaScript",
+                "icon": "/assets/icons/typescript.webp"
             },
             {
                 "name": "NextJS",
@@ -164,6 +169,15 @@
                 "link": "/go-corona",
                 "github": "",
                 "date": "03/13/2022"
+            },
+            {
+                "name": "admin panel",
+                "shortDescription": "a new & modern dashboard",
+                "technologies": ["React", "TailwindCSS", "Apex Charts"],
+                "image": "/assets/images/portfolios/dashboard.webp",
+                "link": "/admin-panel",
+                "github": "https://github.com/mahdiadham/admin-dashboard",
+                "date": "05/13/2026"
             },
             {
                 "name": "banks name detector",

@@ -12,7 +12,7 @@ const PortfolioCard = ({ data }) => {
                             {shortDescription}
                         </p>
                         <div className="overflow-hidden rounded-lg my-4 w-full h-50 cursor-pointer">
-                            <img src={image} alt={name || "portfolio"} className="rounded-lg size-full object-cover transition-all duration-300 hover:scale-110" />
+                            <img src={image} alt={name || "portfolio"} className="rounded-lg size-full object-fill transition-all duration-300 hover:scale-110" />
                         </div>
                         <div className="w-full flex justify-between items-center mb-4">
                             <a href={link} className="card-btn max-xs:text-sm">
