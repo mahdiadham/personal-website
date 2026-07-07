@@ -47,7 +47,7 @@ const Header = () => {
                         )}
                     </div>
                 }
-                <div className={`relative flex justify-between items-center py-3 px-6 ${isScroll && "bg-white/10 backdrop-blur-2xl rounded-xl shadow-neon-sm"}`}>
+                <div className={`relative flex justify-between items-center py-3 px-6 ${isScroll && "bg-white/10 backdrop-blur-2xl rounded-xl"}`}>
                     <button className={`text-white cursor-pointer lg:hidden border border-teal-700 p-2 size-10 rounded-lg ${!isScroll && "bg-white/13 backdrop-blur-2xl"}`} onClick={() => setIsOpen(!isOpen)}>
                         {isOpen ?
                             <HiMiniXMark size={22} /> :
@@ -58,7 +58,7 @@ const Header = () => {
                         <img src={MiniLogo} alt="logo" />
                     </Link>
                     {menu?.length &&
-                        <div className={`hidden lg:flex justify-center items-center font-ubuntuMedium gap-10 text-white capitalize *:transition-colors *:duration-150 *:hover:text-emerald-600 ${!isScroll && "bg-white/10 backdrop-blur-2xl py-5 px-12 rounded-xl shadow-neon-sm"}`}>
+                        <div className={`hidden lg:flex justify-center items-center font-ubuntuMedium gap-10 text-white capitalize *:transition-colors *:duration-150 *:hover:text-emerald-600 ${!isScroll && "bg-white/10 backdrop-blur-2xl py-5 px-12 rounded-xl"}`}>
                             {menu?.map(item =>
                                 item?.path === "/" ?
                                     <Link to={item.path} key={item.title} onClick={handleScrollHome}>

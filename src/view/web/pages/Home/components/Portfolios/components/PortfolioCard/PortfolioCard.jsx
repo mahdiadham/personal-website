@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import "./PortfolioCard.css";
 
 const PortfolioCard = ({ data }) => {
@@ -12,17 +13,15 @@ const PortfolioCard = ({ data }) => {
                             {shortDescription}
                         </p>
                         <div className="overflow-hidden rounded-lg my-4 w-full h-50 cursor-pointer">
-                            <img src={image} alt={name || "portfolio"} className="rounded-lg size-full object-fill transition-all duration-300 hover:scale-110" />
+                            <img loading="lazy" src={image} alt={name || "portfolio"} className="rounded-lg size-full object-fill transition-all duration-300 hover:scale-110" />
                         </div>
                         <div className="w-full flex justify-between items-center mb-4">
-                            <a href={link} className="card-btn max-xs:text-sm">
+                            <a href={link || undefined} className={clsx("card-btn max-xs:text-sm", !link && "pointer-events-none opacity-30")}>
                                 view project
                             </a>
-                            {github &&
-                                <a href={github} className="card-btn max-xs:text-sm">
-                                    github repo
-                                </a>
-                            }
+                            <a href={github || undefined} className={clsx("card-btn max-xs:text-sm", !github && "pointer-events-none opacity-30")}>
+                                github repo
+                            </a>
                         </div>
                         {technologies?.length &&
                             <div className="flex justify-start items-center flex-wrap mt-1">

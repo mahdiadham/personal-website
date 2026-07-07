@@ -18,7 +18,7 @@ const Intro = () => {
     }
 
     return (
-        <div className="container flex max-sm:flex-col justify-between items-center gap-y-20 sm:mt-60 mt-40">
+        <div className="container flex max-sm:flex-col justify-around items-center gap-y-20 sm:mt-60 mt-40">
             <motion.div
                 className="flex flex-col justify-start items-start gap-y-6"
                 initial={{x: -200, opacity: 0}}
@@ -27,7 +27,7 @@ const Intro = () => {
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <div className="flex justify-start items-center gap-3">
-                    <div className={`size-11 overflow-hidden flex justify-center items-center rounded-md ${status ? "shadow-neon-sm" : "shadow-red-neon-sm"}`}>
+                    <div className={`size-11 overflow-hidden flex justify-center items-center rounded-md ${status ? "border border-teal-800" : "border border-red-900"}`}>
                         <img src={IntroGif} alt="intro-image" />
                     </div>
                     <div className={`size-3 ${status ? "bg-emerald-700" : "bg-red-500"} rounded-full flex justify-center items-center`}>

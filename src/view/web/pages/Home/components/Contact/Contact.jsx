@@ -1,31 +1,41 @@
-import { useState } from "react";
+import { useState, useReducer } from "react";
 import { motion } from "motion/react"
 import Swal from "sweetalert2";
 import emailjs from '@emailjs/browser';
 import { contact } from "../../../../../../data/data.json";
 import "./style.css";
 
-const Contact = () => {
-    const initialFormData = {
-        name: "",
-        subject: "",
-        email: "",
-        message: ""
-    };
+const initialFormData = {
+    name: "",
+    subject: "",
+    email: "",
+    message: ""
+};
 
+const reducer = (state, action) => {
+    switch (action.type) {
+        case "changeField": {
+            return {
+                ...state,
+                [action.field]: action.value
+            }
+        }
+        case "reset": {
+            return initialFormData;
+        }
+        default: {
+            return state;
+        }
+    }
+}
+
+const Contact = () => {
     const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
     const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
 
     const [isSend, setIsSend] = useState(false);
-    const [formData, setFormData] = useState(initialFormData);
-
-    const handleFormData = e => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    }
+    const [formData, dispatch] = useReducer(reducer, initialFormData);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -35,7 +45,10 @@ const Contact = () => {
             const result = await emailjs.send(
                 serviceId,
                 templateId,
-                formData,
+                {
+                    ...formData,
+                    time: new Date()
+                },
                 publicKey
             );
             if (result.text === "OK") {
@@ -45,7 +58,7 @@ const Contact = () => {
                     text: 'Your message has been sent !',
                     confirmButtonText: 'OK'
                 });
-                setFormData(initialFormData);
+                dispatch({ type: "reset" });
                 setIsSend(false);
             }
         }
@@ -53,16 +66,16 @@ const Contact = () => {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops !',
-                text: `Failed to send the message !\nPlease check your connection.\nOr\n${error}`,
+                text: `Failed to send the message !\nPlease check your connection.\nOr\n${error?.message}`,
                 confirmButtonText: 'OK'
             });
-            setFormData(initialFormData);
+            dispatch({ type: "reset" });
             setIsSend(false);
         }
     }
 
     return (
-        <div className="pt-20 md:pt-40 container flex max-md:flex-col justify-between items-center md:items-start gap-y-10" id="contact">
+        <div className="pt-20 md:pt-40 container flex max-md:flex-col justify-around items-center md:items-start gap-y-10" id="contact">
             <motion.div
                 className="flex flex-col justify-start items-start gap-y-6 w-full sm:w-100"
                 initial={{ x: -250, opacity: 0 }}
@@ -95,7 +108,7 @@ const Contact = () => {
                             className="form-input"
                             id="name"
                             name="name"
-                            onChange={e => handleFormData(e)}
+                            onChange={e => dispatch({ type: "changeField", field: e.target.name, value: e.target.value })}
                             value={formData.name}
                             required
                         />
@@ -110,7 +123,7 @@ const Contact = () => {
                             className="form-input"
                             id="subject"
                             name="subject"
-                            onChange={e => handleFormData(e)}
+                            onChange={e => dispatch({ type: "changeField", field: e.target.name, value: e.target.value })}
                             value={formData.subject}
                             required
                         />
@@ -126,7 +139,7 @@ const Contact = () => {
                         className="form-input"
                         id="email"
                         name="email"
-                        onChange={e => handleFormData(e)}
+                        onChange={e => dispatch({ type: "changeField", field: e.target.name, value: e.target.value })}
                         value={formData.email}
                         required
                     />
@@ -140,7 +153,7 @@ const Contact = () => {
                         className="form-input"
                         id="message"
                         name="message"
-                        onChange={e => handleFormData(e)}
+                        onChange={e => dispatch({ type: "changeField", field: e.target.name, value: e.target.value })}
                         value={formData.message}
                         required
                     />

@@ -171,6 +171,15 @@
                 "date": "03/13/2022"
             },
             {
+                "name": "instagram downloader bot",
+                "shortDescription": "an instagram downloader bot",
+                "technologies": ["NodeJS", "TypeScript", "Telegraf", "MySQL"],
+                "image": "/assets/images/portfolios/insta-downloader.webp",
+                "link": "",
+                "github": "https://github.com/mahdiadham/instagram-downloader-bot",
+                "date": "06/30/2026"
+            },
+            {
                 "name": "admin panel",
                 "shortDescription": "a new & modern dashboard",
                 "technologies": ["React", "TailwindCSS", "Apex Charts"],
@@ -178,6 +187,15 @@
                 "link": "/admin-panel",
                 "github": "https://github.com/mahdiadham/admin-dashboard",
                 "date": "05/13/2026"
+            },
+            {
+                "name": "telegram translator bot",
+                "shortDescription": "a multilingual telegram translator bot",
+                "technologies": ["NodeJS", "TypeScript", "Node Telegram Bot API", "MySQL"],
+                "image": "/assets/images/portfolios/translator.webp",
+                "link": "",
+                "github": "https://github.com/mahdiadham/translator-bot",
+                "date": "06/23/2026"
             },
             {
                 "name": "banks name detector",
