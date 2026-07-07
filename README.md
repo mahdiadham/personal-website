@@ -8,6 +8,8 @@ A Modern Resume Template With ReactJS
    ```bash
    git clone https://github.com/mahdiadham/personal-website.git
    cd personal-website-main
+   // or
+   cd personal-website
    npm install
    ```
 2. Create an account in <a href="https://emailjs.com">Email JS</a> and get your own <code>Public Key</code>, <code>Service ID</code> and <code>Template ID</code>.
