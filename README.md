@@ -8,7 +8,6 @@ A Modern Resume Template With ReactJS
    ```bash
    git clone https://github.com/mahdiadham/personal-website.git
    cd personal-website-main
-   cd personal-website
    npm install
    ```
    Or
@@ -18,6 +17,7 @@ A Modern Resume Template With ReactJS
    cd personal-website
    npm install
    ```
+   It depends on the name of your folder.
 3. Create an account in <a href="https://emailjs.com">Email JS</a> and get your own <code>Public Key</code>, <code>Service ID</code> and <code>Template ID</code>.
 4. Create <code>.env</code> file in the root directory and replace the values :
    
