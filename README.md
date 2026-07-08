@@ -1,6 +1,8 @@
 # Modern Resume Template
 A Modern Resume Template With ReactJS
 
+## Technologies :
+<img src="https://skillicons.dev/icons?i=react,tailwindcss,vite&perline=3" />
 
 ## Instructions
 1. Clone the repository first and install the requirements packages :
