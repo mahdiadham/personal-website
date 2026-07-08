@@ -11,7 +11,7 @@ const Portfolios = () => {
     return (
         <div className="container pt-20 md:pt-40" id="portfolio">
             <motion.h2
-                className="text-white text-5xl max-sm:text-4xl max-xs:!text-3xl font-ubuntuBold text-center capitalize"
+                className="text-white text-5xl max-sm:text-4xl max-xs:text-3xl! font-ubuntuBold text-center capitalize"
                 initial={{ y: 300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -21,19 +21,19 @@ const Portfolios = () => {
             </motion.h2>
             {portfolios?.projects?.length ?
                 <motion.div
-                    className="flex justify-center items-start mt-15 gap-8 flex-wrap w-full"
+                    className="flex justify-center items-start mt-15 gap-8 flex-wrap w-full select-none"
                     initial={{ x: -200, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <Swiper
-                        className="h-full !pb-10 [&>.swiper-wrapper]:!flex [&>.swiper-wrapper]:!items-center [&>.swiper-wrapper]:!justify-start w-full [&>.swiper-pagination]:!-bottom-0"
+                        className="h-full pb-10! [&>.swiper-wrapper]:flex! [&>.swiper-wrapper]:items-center! [&>.swiper-wrapper]:justify-start! w-full [&>.swiper-pagination]:bottom-0!"
                         modules={[ Navigation, Pagination, Scrollbar, A11y]}
                         pagination={{
                             clickable: true,
                             renderBullet: function (index, className) {
-                                return '<span class="' + className + ' !bg-emerald-500 !w-2 !h-2 !rounded-full"></span>';
+                                return '<span class="' + className + ' bg-emerald-500! w-2! h-2! rounded-full!"></span>';
                             },
                         }}
                         slidesPerView={5}

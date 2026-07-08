@@ -167,7 +167,7 @@
                 "technologies": ["HTML", "CSS", "TailwindCSS", "JavaScript", "JQuery"],
                 "image": "/assets/images/portfolios/go-corona.webp",
                 "link": "/go-corona",
-                "github": "",
+                "github": "https://github.com/mahdiadham/go-corona",
                 "date": "03/13/2022"
             },
             {
@@ -209,7 +209,7 @@
             {
                 "name": "weather app",
                 "shortDescription": "a simple weather app design",
-                "technologies": ["React", "Weather API"],
+                "technologies": ["React", "CSS", "Weather API"],
                 "image": "/assets/images/portfolios/weather-app.webp",
                 "link": "/weather-app",
                 "github": "https://github.com/mahdiadham/weather-app",
@@ -218,7 +218,7 @@
             {
                 "name": "digital clock",
                 "shortDescription": "a modern digital clock design",
-                "technologies": ["React"],
+                "technologies": ["React", "CSS"],
                 "image": "/assets/images/portfolios/digital-clock.webp",
                 "link": "/digital-clock",
                 "github": "https://github.com/mahdiadham/digital-clock",
