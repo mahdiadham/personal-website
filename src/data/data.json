@@ -172,8 +172,8 @@
             },
             {
                 "name": "instagram downloader bot",
-                "shortDescription": "an instagram downloader bot",
-                "technologies": ["NodeJS", "TypeScript", "Telegraf", "MySQL"],
+                "shortDescription": "an instagram downloader bot with personal developed API",
+                "technologies": ["NodeJS", "ExpressJS", "TypeScript", "Telegraf", "MySQL"],
                 "image": "/assets/images/portfolios/insta-downloader.webp",
                 "link": "",
                 "github": "https://github.com/mahdiadham/instagram-downloader-bot",
